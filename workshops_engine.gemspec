@@ -1,6 +1,6 @@
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
-require "workshops_engine/version"
+require 'workshops_engine/version'
 
 Gem::Specification.new do |s|
   s.name        = 'workshops_engine'
