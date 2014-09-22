@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+- 2.1.2
+before_script:
+- "sqlite3 -c 'create database db/test.sqlite3'"
+- 'RAILS_ENV=test bundle exec rake db:migrate'
+script:
+- 'RAILS_ENV=test bundle exec rake'
