@@ -1,0 +1,7 @@
+%tr
+  %td= workshop.title
+  %td= workshop.description
+  %td= link_to 'Show', workshop
+  %td= link_to 'Edit', edit_workshop_path(workshop)
+  %td= link_to 'Destroy', workshop, method: :delete,
+    data: { confirm: 'Are you sure?' }

@@ -1,0 +1,14 @@
+= simple_form_for(@workshop, html: { multipart: true }) do |f|
+  = render partial: 'shared/errors', locals: { resource: @workshop }
+  .col-md-4
+    .span4
+  .col-md-8
+    .span8
+      .field
+        = f.input :title
+      .field
+        = f.input :description
+      .actions
+        = link_to 'Cancel', workshops_path, class: 'btn btn-disabled'
+        = f.submit 'Save', class: 'btn'
+.clearfix
